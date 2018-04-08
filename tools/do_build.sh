@@ -13,7 +13,7 @@ pwd
 
 . ./oe-init-build-env
 
-bitbake rpi-basic-image
+bitbake core-image-minimal
 if [ $? -ne 0 ]
 then
     echo "bitbake core-image-minimal FAILED"
