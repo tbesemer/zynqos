@@ -3,7 +3,7 @@
 TREE_ROOT=`pwd`
 if [ ! -d $TREE_ROOT/yocto/poky/build ]
 then
-    echo "Need to be in ~/sdk, with ~/rpsdk/yocto/poky/build"
+    echo "Need to be in ~/sdk, with ~/zynqos/yocto/poky/build"
     exit 1
 fi
 

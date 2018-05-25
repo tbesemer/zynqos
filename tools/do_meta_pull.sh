@@ -17,18 +17,18 @@ fi
 
 if [ ! -d poky ]
 then
-    git clone -b pyro git://git.yoctoproject.org/poky.git
+    git clone -b morty git://git.yoctoproject.org/poky.git
 fi
 
 
 if [ ! -d meta-openembedded ]
 then
-    git clone -b pyro https://github.com/openembedded/meta-openembedded.git
+    git clone -b morty https://github.com/openembedded/meta-openembedded.git
 fi
 
 if [ ! -d meta-xilnx ]
 then
-    git clone -b pyro git://git.yoctoproject.org/meta-xilinx
+    git clone -b rel-v2017.4 https://github.com/Xilinx/meta-xilinx.git
 fi
 
 cd poky; . ./oe-init-build-env

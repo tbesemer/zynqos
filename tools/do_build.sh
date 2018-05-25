@@ -3,7 +3,7 @@
 TREE_ROOT=`pwd`
 if [ ! -d $TREE_ROOT/yocto/poky/build ]
 then
-    echo "Need to be in ~/sdk, with ~/rpsdk/yocto/poky/build"
+    echo "Need to be in ~/sdk, with ~/zynqos/yocto/poky/build"
     exit 1
 fi
 
@@ -13,7 +13,7 @@ pwd
 
 . ./oe-init-build-env
 
-bitbake rpi-basic-image
+bitbake core-image-minimal
 if [ $? -ne 0 ]
 then
     echo "bitbake core-image-minimal FAILED"

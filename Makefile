@@ -22,6 +22,18 @@ os_sdk:
 os_pull:
 	tools/do_meta_pull.sh
 
+.PHONY: os_config
+os_config:
+	tools/do_build_config.sh
+
+.PHONY: os_build
+os_build:
+	tools/do_build.sh
+
+.PHONY: os_sdk_build
+os_sdk_build:
+	tools/do_build_sdk.sh
+
 .PHONY: help
 help:
 	@echo "Make Targets:"
